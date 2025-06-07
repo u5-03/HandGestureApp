@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		68AB930D2DF09D8C004F2338 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 68AB930C2DF09D8C004F2338 /* RealityKitContent */; };
+		68AB932C2DF09E0C004F2338 /* HandGesturePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 68AB932B2DF09E0C004F2338 /* HandGesturePackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68AB93072DF09D8C004F2338 /* HandGestureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandGestureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AB930B2DF09D8C004F2338 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		68AB93282DF09DBD004F2338 /* HandGesturePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HandGesturePackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AB932C2DF09E0C004F2338 /* HandGesturePackage in Frameworks */,
 				68AB930D2DF09D8C004F2338 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +56,7 @@
 			children = (
 				68AB93092DF09D8C004F2338 /* HandGestureApp */,
 				68AB930A2DF09D8C004F2338 /* Packages */,
+				68AB93292DF09DEC004F2338 /* Frameworks */,
 				68AB93082DF09D8C004F2338 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,9 +72,17 @@
 		68AB930A2DF09D8C004F2338 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				68AB93282DF09DBD004F2338 /* HandGesturePackage */,
 				68AB930B2DF09D8C004F2338 /* RealityKitContent */,
 			);
 			path = Packages;
+			sourceTree = "<group>";
+		};
+		68AB93292DF09DEC004F2338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +106,7 @@
 			name = HandGestureApp;
 			packageProductDependencies = (
 				68AB930C2DF09D8C004F2338 /* RealityKitContent */,
+				68AB932B2DF09E0C004F2338 /* HandGesturePackage */,
 			);
 			productName = HandGestureApp;
 			productReference = 68AB93072DF09D8C004F2338 /* HandGestureApp.app */;
@@ -123,6 +136,9 @@
 			);
 			mainGroup = 68AB92FE2DF09D8C004F2338;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				68AB932A2DF09E0C004F2338 /* XCLocalSwiftPackageReference "Packages/HandGesturePackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 68AB93082DF09D8C004F2338 /* Products */;
 			projectDirPath = "";
@@ -348,10 +364,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		68AB932A2DF09E0C004F2338 /* XCLocalSwiftPackageReference "Packages/HandGesturePackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/HandGesturePackage;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		68AB930C2DF09D8C004F2338 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		68AB932B2DF09E0C004F2338 /* HandGesturePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HandGesturePackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
