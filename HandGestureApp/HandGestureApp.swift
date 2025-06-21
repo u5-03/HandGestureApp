@@ -10,7 +10,7 @@ import HandGesturePackage
 
 @main
 struct HandGestureApp: App {
-        
+
     var body: some Scene {
         HandGestureScene()
 //        WindowGroup {
@@ -21,7 +21,7 @@ struct HandGestureApp: App {
 //                    .environment(appModel)
 //            }
 //        }
-//        
+
 //        ImmersiveSpace(id: appModel.immersiveSpaceID) {
 //            ImmersiveView()
 //                .environment(appModel)

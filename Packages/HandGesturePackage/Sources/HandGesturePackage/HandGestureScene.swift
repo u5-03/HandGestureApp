@@ -7,26 +7,26 @@
 
 import SwiftUI
 
+/// ハンドジェスチャーアプリのメインシーン
 public struct HandGestureScene: Scene {
+    @State private var appModel = AppModel.shared
+
     public init() {}
 
     public var body: some Scene {
-        WindowGroup(id: SceneId.top) {
-            TopView()
+        // メインウィンドウ（初回起動時のWelcomeView）
+        WindowGroup(id: "WelcomeWindow") {
+            WelcomeView()
+                .environment(appModel)
         }
+        .windowStyle(.plain)
+        .defaultSize(width: 1000, height: 600)
 
-        ImmersiveSpace(id: SceneId.immersive) {
-//            ImmersiveView()
-//                .environment(appModel)
-//                .onAppear {
-//                    appModel.immersiveSpaceState = .open
-//                    avPlayerViewModel.play()
-//                }
-//                .onDisappear {
-//                    appModel.immersiveSpaceState = .closed
-//                    avPlayerViewModel.reset()
-//                }
+        // ImmersiveSpace（ハンドジェスチャー体験）
+        ImmersiveSpace(id: appModel.immersiveSpaceID) {
+            HandGestureImmersiveView()
+                .environment(appModel)
         }
-        .immersionStyle(selection: .constant(.full), in: .full)
+        .immersionStyle(selection: .constant(.mixed), in: .mixed)
     }
 }

@@ -56,3 +56,4 @@ struct ToggleImmersiveSpaceButton: View {
         .fontWeight(.semibold)
     }
 }
+

@@ -11,5 +11,13 @@
 		<key>UISceneConfigurations</key>
 		<dict/>
 	</dict>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSHandsTrackingUsageDescription</key>
+	<string>The app requires this so your hands can interact with the cubes placed in your environment.</string>
+	<key>NSLocalizedFailureReason</key>
+	<string>The app requires this so you can add objects to the scene</string>
+	<key>NSWorldSensingUsageDescription</key>
+	<string>The app requires this so you can place virtual cubes in your surroundings.</string>
 </dict>
 </plist>
